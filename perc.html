@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传作品</title>
+    <link rel="stylesheet" href="Style/percStyle.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo"><a href="index.html"><img src="res_img/main-logo2-NOBG.png" height="66px" alt="Logo"></a></div>
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="perc.html">上传作品</a></li>
+                <li><a href="perf.html">得奖作品</a></li>
+                <li><a href="designlist.html">设计一览</a></li>
+                <li><a href="project.html">关于比赛</a></li>
+                <li><a href="contactus.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="item">
+            <div class="item-box">
+                <div class="item-center">
+                    <picture>
+                        <img src="res_img/container-itemBox/item1.png">
+                    </picture>
+                </div>
+                <div class="upload-container">
+                    <input type="file" id="imgUpload" accept="image/*">
+                    <button onclick="document.getElementById('imgUpload').click()">选择图片</button>
+                    <span style="color: rgba(255, 255, 255, 0.504); cursor:default">在此上传你的作品</span>
+                </div>
+                <div class="fakeSubmit"><p><a href="fakeSubmit.html">点击上传</a></p></div>
+            </div>
+        </div>
+    </div>
+    <audio id="audio" autoplay>
+        <source src="/res_media/Christopher Larkin - Hollow Knight.ogg" type="audio/ogg">
+        您的浏览器不支持音频元素。
+    </audio>
+    <script src="ScriptJs/percJS.js"></script>
+</body>
+
+</html>

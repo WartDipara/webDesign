@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设计一览</title>
+    <link rel="stylesheet" href="Style/designlistCss.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo"><a href="index.html"><img src="res_img/main-logo2-NOBG.png" height="66px" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="perc.html">上传作品</a></li>
+                <li><a href="perf.html">得奖作品</a></li>
+                <li><a href="designlist.html">设计一览</a></li>
+                <li><a href="project.html">关于比赛</a></li>
+                <li><a href="contactus.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="title-gallery">
+        <h2> 作品展示区 </h2>
+    </div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc1.jpg" alt="作品1">
+            <div class="description">
+                <p class="title">作品1</p>
+                <p class="author">Alice Johnson</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">201</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc2.jpg" alt="作品2">
+            <div class="description">
+                <p class="title">作品2</p>
+                <p class="author">Benjamin Smith</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">111</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc3.jpg" alt="作品3">
+            <div class="description">
+                <p class="title">作品3</p>
+                <p class="author">Charlotte Davis</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">931</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc4.jpg" alt="作品4">
+            <div class="description">
+                <p class="title">作品4</p>
+                <p class="author">Daniel Martinez</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">241</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc5.jpg" alt="作品5">
+            <div class="description">
+                <p class="title">作品5</p>
+                <p class="author">Emily Garcia</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">213</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc6.jpg" alt="作品6">
+            <div class="description">
+                <p class="title">作品6</p>
+                <p class="author">MingSiQin</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">391</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc7.jpg" alt="作品7">
+            <div class="description">
+                <p class="title">作品7</p>
+                <p class="author">Frank Wilson</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">1113</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc8.jpg" alt="作品8">
+            <div class="description">
+                <p class="title">作品8</p>
+                <p class="author">Grace Lee</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">355</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc9.jpg" alt="作品9">
+            <div class="description">
+                <p class="title">作品9</p>
+                <p class="author">Katherine Walker</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">444</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc10.jpg" alt="作品10">
+            <div class="description">
+                <p class="title">作品10</p>
+                <p class="author">Isabella Rodriguez</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">312</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc11.jpg" alt="作品11">
+            <div class="description">
+                <p class="title">作品11</p>
+                <p class="author">Peter Dick</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">931</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc12.jpg" alt="作品12">
+            <div class="description">
+                <p class="title">作品12</p>
+                <p class="author">Noah Young</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">523</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc13.webp" alt="作品13">
+            <div class="description">
+                <p class="title">作品13</p>
+                <p class="author">Mia Allen</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">92</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc14.jfif" alt="作品14">
+            <div class="description">
+                <p class="title">作品14</p>
+                <p class="author">NingBi</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">512</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc15.jfif" alt="作品15">
+            <div class="description">
+                <p class="title">作品15</p>
+                <p class="author">WongTzeLin</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">211</span>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="res_img/checkBox/pc16.jpg" alt="作品16">
+            <div class="description">
+                <p class="title">作品16</p>
+                <p class="author">LiQi</p>
+            </div>
+            <div class="vote-container">
+                <button class="vote-button" onclick="vote(this)">❤</button>
+                <span class="vote-counter">234</span>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio" autoplay>
+        <source src="/res_media/折户伸治 (おりと しんじ) - 潮鳴り (潮鸣).ogg" type="audio/ogg">
+        您的浏览器不支持音频元素。
+    </audio>
+
+    <script>
+        const audio=document.getElementById('audio');
+        audio.volume=0.3;
+
+        function vote(button) {
+            const voteCounter = button.nextElementSibling;
+            let count = parseInt(voteCounter.textContent, 10);
+            count += 1;
+            voteCounter.textContent = count;
+        }
+    </script>
+</body>
+
+</html>

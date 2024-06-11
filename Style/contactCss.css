@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../res_img/ContBG.jpg);
+    font-size:21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 0.5s ease-in-out;
+    background-blend-mode: multiply;
+    background-color: rgba(69, 61, 61, 0.568);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+    width:8px;
+}
+body::-webkit-scrollbar-track {
+    background: #2929299d; 
+}
+body::-webkit-scrollbar-thumb {
+    background: #a6a6ea; 
+    border-radius: 5px; 
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #dca7c4; 
+}
+.div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.nav .logo {
+    position: absolute;
+    justify-items: center;
+    align-items: center;
+    z-index: 10;
+    padding-left: 9vw;
+    padding-top: 5px;
+    transition: .5s;
+}
+.nav{
+    width:100vw;
+    background-color:rgba(25, 25, 25, 0.6);
+    justify-content: space-between;
+    align-items: center;
+}
+.nav>ul{
+    display:flex;
+    justify-content: center;
+    padding: 25px 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.nav>ul>li{
+    position: relative;
+    margin:0 50px;
+}
+.nav ul li a{
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.8);
+    text-shadow: 1px 1px 5px rgba(248, 248, 248, 0.615);
+    border-bottom: 3px solid rgba(248, 248, 248, 0);
+    font-weight: 700;
+    text-decoration: none;
+    transition: .5s;
+}
+.nav ul li a:hover{
+    color:rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 40px rgba(1,166,231, 0.747);
+    border-bottom: 3px solid rgb(99, 104, 250);
+}
+
+.nav ul li .secondList{
+    display: none;
+    padding-left: 10px;
+    text-decoration: none;
+    color:#f1f1f1;
+    justify-content: center;
+    width:300px;
+    position:absolute;
+}
+.nav ul>li:hover ul{
+    display:block;
+}
+
+.container>h2{
+    margin: 70px auto;
+    text-align: center;
+    color:#119dfbc0;
+    cursor: default;
+}
+.container>ul{
+    margin-top: 25px;
+    margin-left: 30vw;
+    align-items: center;
+    width:40vw;
+    background-color: rgb(24, 19, 27);
+    border-radius: 10px;
+    list-style-type: none;
+}
+.container>ul>li{
+    text-align: center;
+    color:rgba(1,166,231, 0.747);
+}

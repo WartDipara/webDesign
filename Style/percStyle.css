@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../res_img/pefcFullBG.png);
+    font-size:21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 0.5s ease-in-out;
+    background-blend-mode: multiply;
+    background-color: rgba(25, 25, 25, 0.3);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.nav .logo {
+    position: absolute;
+    justify-items: center;
+    align-items: center;
+    z-index: 10;
+    padding-left: 7vw;
+    padding-top: 5px;
+    transition: .5s;
+}
+.nav{
+    width:100vw;
+    background-color:rgba(25, 25, 25, 0.6);
+    justify-content: space-between;
+    align-items: center;
+}
+.nav>ul{
+    display:flex;
+    justify-content: center;
+    padding: 25px 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.nav>ul>li{
+    position: relative;
+    margin:0 50px;
+}
+.nav ul li a{
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.8);
+    text-shadow: 1px 1px 5px rgba(248, 248, 248, 0.615);
+    border-bottom: 3px solid rgba(248, 248, 248, 0);
+    font-weight: 700;
+    text-decoration: none;
+    transition: .5s;
+}
+.nav ul li a:hover{
+    color:rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 40px rgba(1,166,231, 0.747);
+    border-bottom: 3px solid rgb(99, 104, 250);
+}
+
+.nav ul li .secondList{
+    display: none;
+    padding-left: 10px;
+    text-decoration: none;
+    color:#f1f1f1;
+    justify-content: center;
+    width:300px;
+    position:absolute;
+}
+.nav ul>li:hover ul{
+    display:block;
+}
+
+.container{
+    margin-top: 100px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item-box{
+    background: #242526;
+    border-radius: 10px;
+    position: relative;
+    border: 3px solid #202020;
+    width: 610px;
+    margin: 0 20px 20px 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.container .item-box .item-center>picture {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+}
+
+.container .item-box .item-center>picture>img {
+    border-radius: 10px 10px 0px 0px;
+    width: 600px;
+    height: 375px;
+    display: block; 
+    margin: auto; 
+}
+
+.upload-container {
+    display: flex;
+    align-items: center;
+}
+.upload-container input[type="file"] {
+    display: none;
+}
+.upload-container button {
+    padding: 5px 10px;
+    font-size: 21px;
+    cursor: pointer;
+}
+.item-box .fakeSubmit{
+    margin-top: 7px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 3px 5px;
+    border-radius: 10px 10px 10px 10px;
+    font-size:21px;
+    cursor:pointer;
+    font-weight: bold;
+}
+.item-box .fakeSubmit>p{
+    margin: 10px auto;
+}
+.item .item-box .fakeSubmit>p>a{
+    text-decoration: none;
+    color: rgba(36, 35, 35, 0.8);
+}
+.item .item-box .fakeSubmit>p>a:hover{
+    color:rgba(255, 109, 196, 0.8);
+}
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' lang="english">
+    <title>创意设计活动</title>
+    <link rel="stylesheet" href="Style/cssStyle.css">
+</head>
+
+<body>
+    <div class="header-contaniner">
+        <div class="logo" id="show-nav">
+            <h2 id="toggleNav">⇀创意设计活动↽</h2>
+            <span class="tips" style="color:rgba(255,255,255,0.5)">点击此处</span>
+        </div>
+        <nav class="nav hidden" id="hidden-nav">
+            <div class="small-logo"><a href="index.html"><img src="res_img/main-logo2-NOBG.png" height="66px"></a></div>
+            <ul>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="perc.html">上传作品</a></li>
+                <li><a href="perf.html">得奖作品</a></li>
+                <li><a href="designlist.html">设计一览</a></li>
+                <li><a href="project.html">关于比赛</a></li>
+                <li><a href="contactus.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="audio-player">
+        <button class="play-button" id="playButton">播放</button>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+    </div>
+    
+    <audio id="audio" >
+        <source src="/res_media/三亩地 - 城南花已开.ogg" type="audio/ogg">
+        您的浏览器不支持音频元素。
+    </audio>
+
+<script src="ScriptJs/indexJS.js"></script>
+</body>
+
+</html>
